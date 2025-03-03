@@ -1,0 +1,34 @@
+{
+    "name": "assistant-engine/open-functions-github",
+    "description": "The GitHub Open Function package integrates GitHub with large language models (LLMs) using the Open Functions architecture, enabling streamlined repository management and file operations.",
+    "homepage": "https://github.com/AssistantEngine/open-functions-github",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Florian Weigang",
+            "email": "florian@assistant-engine.com"
+        }
+    ],
+    "config": {
+        "sort-packages": true,
+        "allow-plugins": {
+            "php-http/discovery": true
+        }
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true,
+    "autoload": {
+        "psr-4": {
+            "AssistantEngine\\OpenFunctions\\Github\\": "src/"
+        }
+    },
+    "require": {
+        "guzzlehttp/guzzle": "^7.9",
+        "knplabs/github-api": "^3.16",
+        "assistant-engine/open-functions-core": "^1.0"
+    },
+    "require-dev": {
+        "openai-php/client": "^0.10.3",
+        "vlucas/phpdotenv": "^5.6"
+    }
+}

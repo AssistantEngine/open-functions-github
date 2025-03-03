@@ -1,0 +1,9 @@
+/combine/
+/vendor/
+/cleanup.sh
+/tool.php
+/index.php
+/.env
+.DS_Store
+.idea/
+composer.lock
